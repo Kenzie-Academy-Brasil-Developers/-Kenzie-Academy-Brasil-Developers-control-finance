@@ -1,0 +1,60 @@
+.register {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    input {
+      outline: none;
+      padding: 0.8rem;
+      border: var(--border-default);
+      border-radius: var(--radius-default);
+
+      input:focus {
+        border-color: var(--gray3);
+      }
+    }
+  }
+  .typeInfo {
+    div {
+      display: flex;
+      flex-direction: column;
+      button {
+        width: 100%;
+        background-color: transparent;
+        border: var(--border-default);
+
+        color: var(--gray2);
+        padding: 0.1875rem;
+      }
+      button:focus {
+        background-color: var(--brand1);
+        color: var(--gray5);
+      }
+    }
+  }
+  button {
+    width: fit-content;
+    background-color: var(--brand1);
+    padding: 0.6rem 1rem;
+    align-self: center;
+    color: var(--gray5);
+    border-radius: (var(--radius-default));
+  }
+}
+
+@media (min-width: 425px) {
+  .register {
+    max-width: 768px;
+    margin-inline: auto;
+
+    .typeInfo {
+      div {
+        flex-direction: row;
+      }
+    }
+  }
+}
